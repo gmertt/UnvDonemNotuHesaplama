@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="script.js" charset="utf-8"></script>
+    <meta charset="utf-8">
+    <title>Ders Ortalama Hesapla</title>
+
+    <style media="screen">
+      .alan11{
+        margin-top: 10px;
+      }
+      table{
+        color: #004d44;
+        width: 1040px;
+        border-color: #B2DFDB;
+      }
+      table th,td{
+        padding: 10px;
+
+      }
+    .inp-icerik{
+      border-style:none;
+      outline:0;
+      width: 80px;
+
+    }
+    .alan12{
+      margin-top:10px;
+      display:none;
+    }
+    button{
+      background: #004d44 ;
+     /* For Safari 5.1 to 6.0 */
+    background: -webkit-linear-gradient(#B2DFDB 0%, #004d44 50%);
+    background: -o-linear-gradient(#B2DFDB 0%, #004d44 50%);
+    background: linear-gradient(#B2DFDB 0%, #004d44 50%); /* For Opera 11.1 to 12.0 */
+     /* For Firefox 3.6 to 15 */
+
+    padding: 10px 12px;
+    color: #e3e3e3;
+    outline: none;
+    }
+    button:hover{
+      cursor: pointer;
+    }
+
+    .inp_ders_sayiC{
+      padding:10px;
+      outline-color: #004d44;
+      color: #004d44;
+      border-color: #B2DFDB;
+      border-style: solid;
+    }
+
+
+
+    </style>
+  </head>
+  <body>
+    <div class="alan0">
+      <div class="alan1">
+        <input id="inp_ders_sayi" class="inp_ders_sayiC"  type="number" name="" value="" placeholder="Ders Sayısını girin" />
+        <button type="button" onclick="cokluDersEkle();" name="button">Ders Satırı Oluştur</button>
+        <button onclick="temizle();" type="button" name="button">Tümünü Temizle</button>
+      </div>
+      <div class="alan11">
+
+          <table border="1" cellspacing="0" cellpadding="0">
+            <thead>
+              <tr>
+                <th >Ders Adi</th>
+                <th>AKTS</th>
+                <th>Vize Notu</th>
+                <th>Vize Ağırlığı %</th>
+                <th>Ödev</th>
+                <th>Ödev Ağırlığı %</th>
+                <th>Final Notu</th>
+                <th>Final Ağırlığı %</th>
+              </tr>
+            </thead>
+            <tbody id="tbody_id">
+
+            </tbody>
+          </table>
+          <div class="alan12" id="hesap_alani">
+            <button onclick="ortHesapla();" type="button" name="button">Ortalama Hesapla</button>
+            <label style="margin-left:10px;color: #004d44;" for="">Not Ortalaması: <span id="not_ort"></span></label>
+          </div>
+      </div>
+
+    </div>
+
+  </body>
+</html>
