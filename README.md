@@ -1,2 +1,3 @@
-# UnvDonemNotuHesaplama
-Üniversite Dönem Notu Hesapla(Calculate University Semester Grade)
+# UnvDonemNotuHesaplama(CalcUnvSmstrGrade)
+Üniversite dönem notu hesaplama/Calculate University Semester Grade
+
