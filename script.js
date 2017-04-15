@@ -32,7 +32,6 @@ function cokluDersEkle()
     alert("Ders sayısını girin (1-15 arası) !");
   }
 
-
 }
 
 function ortHesapla() {
